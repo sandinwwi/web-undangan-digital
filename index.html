@@ -282,13 +282,14 @@
     </script>
 
     <script>
+      const humburger = document.querySelector(".navbar-toggler");
       const stickyTop = document.querySelector(".sticky-top");
-      const offcanvas = document.querySelector(".offcanvas");
 
-      offcanvas.addEventListener("show.bs.offcanvas", function () {
+      humburger.addEventListener("click", function () {
         stickyTop.style.overflow = "visible";
       });
 
+      const offcanvas = document.querySelector(".offcanvas");
       offcanvas.addEventListener("hidden.bs.offcanvas", function () {
         stickyTop.style.overflow = "hidden";
       });
