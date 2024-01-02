@@ -367,10 +367,6 @@ body {
     text-align: center;
   }
 
-  .sticky-top {
-    overflow: hidden;
-  }
-
   .timeline li .timeline-image {
     width: 140px;
     height: 140px;
