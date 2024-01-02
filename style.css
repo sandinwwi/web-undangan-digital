@@ -382,6 +382,10 @@ body {
     margin: 3px;
   }
 
+  .sticky-top {
+    overflow: hidden;
+  }
+
   .timeline li .timeline-image {
     width: 80px;
     height: 80px;
