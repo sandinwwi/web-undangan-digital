@@ -61,12 +61,11 @@ body {
 
 .mynavbar {
   background-color: rgba(255, 255, 255, 0.2) !important;
-  
+  backdrop-filter: blur(4px);
 }
 
 
 .mynavbar .offcanvas {
-  backdrop-filter: blur(4px);
   height: 100vh;
 }
 
@@ -451,7 +450,7 @@ footer li {
     text-align: center;
   }
 
-  .sticky-top {
+  .mynavbar {
     overflow: hidden;
   }
 
@@ -462,15 +461,11 @@ footer li {
 }
 
 /* mobile phone */
-@media (max-width: 576px) {
+@media (max-width: 480px) {
   html {
     font-size: 60%;
   }
 
-  .sticky-top {
-    overflow: hidden;
-  }
-  
   .simply-countdown > .simply-section {
     padding: 45px;
     margin: 3px;

@@ -28,16 +28,30 @@
       </main>
     </section>
 
+      <!-- navbar -->
     <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
       <div class="container">
+        <!-- logo -->
         <a class="navbar-brand" href="#">Sans</a>
-        <!-- button -->
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <!-- Toggle button -->
+        <button 
+        class="navbar-toggler border-0" 
+        type="button" 
+        data-bs-toggle="offcanvas" 
+        data-bs-target="#offcanvasNavbar" 
+        aria-controls="offcanvasNavbar" 
+        aria-label="Toggle navigation">
+          
+        <span class="navbar-toggler-icon"></span>
         </button>
         <!-- akhir button -->
 
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <!-- sidebar -->
+        <div class="sidebar offcanvas offcanvas-start" 
+          tabindex="-1" 
+          id="offcanvasNavbar" 
+          aria-labelledby="offcanvasNavbarLabel">
+
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Sans</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -400,8 +414,8 @@
 
     <script>
       
-      const stickyTop = document.querySelector(".sticky-top");
       const offcanvas = document.querySelector(".offcanvas");
+      const stickyTop = document.querySelector(".sticky-top");
 
       offcanvas.addEventListener("show.bs.offcanvas", function () {
         stickyTop.style.overflow = "visible";
