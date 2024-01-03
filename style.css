@@ -355,6 +355,34 @@ footer li {
   margin: 0.5rem;
 }
 
+.audio-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: rotating 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(350deg);
+  }
+}
+
 /* media query */
 /* extra large */
 @media (max-width: 1200px) {
@@ -421,17 +449,26 @@ footer li {
     text-align: center;
   }
 
+  .sticky-top {
+    overflow: hidden;
+  }
+
   .timeline li .timeline-image {
     width: 140px;
     height: 140px;
   }
 }
+
 /* mobile phone */
 @media (max-width: 576px) {
   html {
     font-size: 60%;
   }
 
+  .sticky-top {
+    overflow: hidden;
+  }
+  
   .simply-countdown > .simply-section {
     padding: 45px;
     margin: 3px;
